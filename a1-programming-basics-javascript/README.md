@@ -2,7 +2,7 @@
 
 ### About the course
 
-The Programming Basics course with JavaScript is parth of the SofUni JavaScript Web Developer path. The course provides the beginning programming skills required for all technology majors at Software University. This includes writing entry-level programming code (basic coding skills), working with the development environment (IDE), using variables and data, operators and expressions, working with the console (reading input and printing results), using conditional statements (if, if-else) and loops (for, while, do-while).
+The Programming Basics course is parth of the SofUni JavaScript Web Developer path. The course provides the beginning programming skills required for all technology majors at Software University. This includes writing entry-level programming code (basic coding skills), working with the development environment (IDE), using variables and data, operators and expressions, working with the console (reading input and printing results), using conditional statements (if, if-else) and loops (for, while, do-while).
 
 ### Skills acquired after successful completion of the course
 
