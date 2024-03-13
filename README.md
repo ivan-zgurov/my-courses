@@ -1,26 +1,15 @@
-# My courses
+# Programming Fundamentals with Python
 
-Welcome to my personal course portfolio! This GitHub repository serves as a comprehensive record of the various courses I have completed throughout my learning journey.
+### About the course
 
-## Features:
+With the Programming Fundamentals course students begin to learn SoftUni's in-house curriculum for the comprehensive training of software engineers. The course covers fundamental concepts in programming that are the basis for effective and quality learning in the professional modules. Students build on the knowledge gained in the Programming Basics course and begin to use more complex programming techniques and structures such as: arrays, lists, objects and classes.
 
-- **Course overviews:** Each course is documented with an informative overview, including the course title, institution, instructor and a brief description.
+Additional technologies needed by any software developer are studied such as: HTML and CSS, HTTP, bitwise operations and more. The fundamentals of web development are explored, as well as some of the most common technologies and tools, and the course successfully builds students awareness of upcoming professional modules and the knowledge they will gain from them to become successful software developers
 
-- **Course materials:** I've uploaded relevant course materials such as : lecture notes, assignments and project files, to provide insight into the curriculum.
+### Skills acquired after successful completion of the course
 
-- **Certificates and achievements:** You'll find digital certificates and accolades I've earned upon course completion, showcasing my commitment to continuous learning.
-
-- **Code samples:** If applicable, I've included code samples and projects created during the courses to demonstrate my practical skills and applications of the knowledge gained.
-
-- **Links to course websites:** Access to official course websites or external resources to learn more about the courses I've taken.
-
-## How to navigate:
-
-Feel free to explore the repository's contents by browsing through folders corresponding to each course. Additionally, you can use the search bar to find specific courses, certificates or projects.
-
-## Connect with me:
-
-If you have any questions, feedback or just want to connect, don't hesitate to reach out. You can find my contact information in the repository or through my GitHub profile.
-
-Thank you for visiting my Course Portfolio! I hope you find it informative and valuable.
-
+- Handling standard programming language functionality
+- Working with linear data structures
+- Understanding the relationship between different IT concepts
+- Analyzing problems and reducing them to computer-executable steps
+- Basic HTML and CSS skills
