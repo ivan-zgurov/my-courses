@@ -1,33 +1,29 @@
 from collections import deque
 
-water_quantity = int(input())
-water_queue = deque()
+available_liters = int(input())
 
 name = input()
+customers = deque()
 
 while name != "Start":
-    water_queue.append(name)
+    customers.append(name)
     name = input()
 
 command = input()
 
 while command != "End":
-    data = command.split()
-    if len(data) == 1:
-        liters_to_give = int(data[0])
-        person_name = water_queue.popleft()
-
-        if liters_to_give <= water_quantity:
-            water_quantity -= liters_to_give
-            print(print(f"{person_name} got water"))
-
+    if command.isdigit():
+        customer = customers.popleft()
+        liters_wanted = int(command)
+        if liters_wanted <= available_liters:
+            available_liters -= liters_wanted
+            print(f"{customer} got water")
         else:
-            print(print(f"{person_name} must wait"))
-
+            print(f"{customer} must wait")
     else:
-        liters_to_add = int(data[1])
-        water_quantity += liters_to_add
-
+        refill_command, liters = command.split()
+        liters = int(liters)
+        available_liters += liters
     command = input()
 
-print(f"{water_quantity} liters left")
+print(f"{available_liters} liters left")
