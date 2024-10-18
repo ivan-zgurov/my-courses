@@ -1,7 +1,7 @@
 def accommodate(*guests, **rooms):
-    # Sort the rooms by capacity (ascending), then by room number (ascending)
+    # Sort the rooms 
     available_rooms = sorted(
-        rooms.items(), key=lambda x: (x[1], int(x[0].split('_')[1]))
+        rooms.items(), key=lambda x: (x[1], int(x[0].split("_")[1]))
     )
 
     accommodations = []
@@ -9,7 +9,7 @@ def accommodate(*guests, **rooms):
 
     for guest in guests:
         suitable_room_index = -1
-        best_capacity_diff = float('inf')
+        best_capacity_diff = float("inf")
         for i, (room_key, capacity) in enumerate(available_rooms):
             if capacity >= guest:
                 capacity_diff = capacity - guest
@@ -18,14 +18,16 @@ def accommodate(*guests, **rooms):
                     best_capacity_diff = capacity_diff
                 elif capacity_diff == best_capacity_diff:
                     # If capacity difference is the same, choose the room with the smallest room number
-                    current_room_number = int(available_rooms[suitable_room_index][0].split('_')[1])
-                    new_room_number = int(room_key.split('_')[1])
+                    current_room_number = int(
+                        available_rooms[suitable_room_index][0].split("_")[1]
+                    )
+                    new_room_number = int(room_key.split("_")[1])
                     if new_room_number < current_room_number:
                         suitable_room_index = i
-        
+
         if suitable_room_index != -1:
             room_key, capacity = available_rooms.pop(suitable_room_index)
-            room_number = int(room_key.split('_')[1])
+            room_number = int(room_key.split("_")[1])
             accommodations.append((room_number, guest))
         else:
             unaccommodated_guests += guest
@@ -34,7 +36,9 @@ def accommodate(*guests, **rooms):
     result = []
 
     if accommodations:
-        result.append(f"A total of {len(accommodations)} accommodations were completed!")
+        result.append(
+            f"A total of {len(accommodations)} accommodations were completed!"
+        )
         for room_number, guest in sorted(accommodations):
             result.append(f"<Room {room_number} accommodates {guest} guests>")
     else:
@@ -46,7 +50,8 @@ def accommodate(*guests, **rooms):
     if available_rooms:
         result.append(f"Empty rooms: {len(available_rooms)}")
 
-    return '\n'.join(result)
+    return "\n".join(result)
+
 
 # Examples
 print(accommodate(5, 4, 2, room_305=6, room_410=5, room_204=2))
